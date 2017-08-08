@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.container{
+    max-width:960px;
+    margin:30px auto;
+}
+.header{
+    background:url(https://ooo.0o0.ooo/2017/05/15/591996690c40a.jpg) no-repeat;
+    background-size:100% 100%;
+    text-align:center;
+    padding-bottom:5px;
+}
+.header>img{
+    height:73px;
+    width:73px;
+    border-radius:50%;
+    background-color: #d8d8d8;
+    margin-top:54px;
+    margin-bottom:40px;
+}
+.header>p{
+    max-width:640px;
+    margin:0 auto 30px auto;
+}
+
+p span.sp{
+    float:left;
+    width:128px;
+    height:24px;
+    background-color: #d8d8d8;
+    margin-left:16px;
+    margin-right:16px;
+    text-align:center;
+    border-radius:8px;
+    padding:2px;
+}
+
+p::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+section.fs{
+    background-color: #efefef;
+    min-height:319px;
+    padding-top:5px;
+    padding-bottom:2px;
+    /* border:1px solid red; */
+    text-align:center;
+}
+
+section.fs div.fs_d1{
+    max-width:6em;
+    min-height:40px;
+    background-color: #d8d8d8;
+    border-radius:14px;
+    margin-top:70px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:40px;
+}
+section.fs div.fs_d2{
+    max-width:18em;
+    min-height:24px;
+    background-color: #e8e8e8;
+    border-radius:14px;
+    margin-top:35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+section.fs div.fs_d3{
+    max-width:18em;
+    min-height:24px;
+    background-color: #e8e8e8;
+    border-radius:14px;
+    margin-top:19px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:100px;
+}
+section.main{
+    background-color: #fff;
+    padding-top:10px;
+    max-width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    /* border:1px solid black; */
+
+}
+section.main div{
+    float:left;
+    margin-left:16px;
+    margin-right:16px;
+    margin-top:32px;
+}
+section.main::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+section.main div img{
+    height:181px;
+    width:288px;
+    background-color: #d8d8d8;
+    border-radius:4px;
+}
+section.main div p:first-of-type{
+    width:204px;
+    height:24px;
+    background-color: #bcbcbc;
+    border-radius:4px;
+    margin-top:19px;
+    margin-bottom:14px;
+    font-size:0.9em;
+}
+section.main div p:last-of-type{
+    width:288px;
+    height:16px;
+    background-color: #ececec;
+    border-radius:4px;
+    font-size:0.9em;
+}
+@media(min-width:1440px){
+    .container{
+        max-width:1440px;
+    }
+}
+@media(max-width:959px){
+    .main_d7,.main_d8,.main_d9{
+        display:none;
+    }
+    section.main{
+        max-width:640px;
+    }
+}
+@media(max-width:639px){
+    .main_d6{
+        display:none;
+    }
+    .header>p{
+        max-width:320px;
+    }
+    p span.sp:nth-of-type(3){
+        margin-top:24px;
+    }
+    p span.sp:nth-of-type(4){
+        margin-top:24px;
+    }
+    section.main{
+        max-width:320px;
+    }
+}
+@media(max-width:319px){
+    .header p{
+        max-width:160px;
+    }
+    .header p span:nth-child(2){
+        margin-top:24px;
+    }
+}
+section.button{
+    text-align: center;
+    margin-top:30px;
+}
+.button-more{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    background: #3498db;
+    border: solid #1f628d 2px;
+    border-top: solid #666666 1px;
+    border-right: solid #666666 1px;
+    border-bottom: solid #666666 1px;
+    border-left: solid #666666 1px;
+    text-decoration: none;
+}
+
+.button-more:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+
